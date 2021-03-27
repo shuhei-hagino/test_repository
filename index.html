@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="index">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="craghoppers（クラグホッパーズ）はイギリスで1965年に創業されたアウトドアブランドです">
+<meta property="og:title" content="GRAGHOPPERS_TOP">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://craghoppers.jp/bdflashinfo/thumbnail.png">
+<meta property="og:url" content="https://craghoppers.jp/index.html">
+<meta property="og:site_name" content="GRAGHOPPERS Site">
+<meta property="og:description" content="craghoppers（クラグホッパーズ）はイギリスで1965年に創業されたアウトドアブランドです">
+<link rel="canonical" href="https://craghoppers.jp/index.html">
+<title>GRAGHOPPERS_TOP</title>
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body>
+	<header class="header">
+		<div class="header__banner">
+			<a href="#">
+				<img src="img/itembanner.png" alt="取扱アイテムはこちら">
+			</a>
+		</div><!--.banner-->
+		<h1 class="header__logo">
+			<img class="header__logo--main" src="img/craghoppers_logo.png" alt="craghoppers">
+			<span class="header__logo--small">craghoppers.jp</span>
+		</h1>
+		  <div id="menu">                                                                                                                                                                                    
+			<div id="nav"> // 以下ご自由にメニューを書き換えてください
+			  <a href="">サービス</a>                                                                                                                                                                        
+			  <a href="">お問い合わせ</a>                                                                                                                                                                    
+			  <a href="">開発プロセス</a>                                                                                                                                                                    
+			  <a href="">技術ブログ</a>                                                                                                                                                                      
+			  <a href="">会社情報</a>                                                                                                                                                                        
+			  <a class="current" href="">ホーム</a>                                                                                                                                                          
+			  <span></span>
+			</div><!-- nav -->
+		  </div><!-- menu -->
+	</header>
+<script>
+$(function() {
+        $('#nav span').css({ 
+                width: $('#nav .current').outerWidth(),
+                left: $('#nav .current').position().left 
+        });
+        $('#nav a').mouseover(function(){
+                $('#nav span').stop().animate({
+                        width: $(this).outerWidth(),
+                        left: $(this).position().left}
+                ,{ duration: 170, easing: 'linear', });
+                //上記でバーの移動スピードとイージング方法を設定できます
+        });
+});
+</script>
+</body>
+</html>
